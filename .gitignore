@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 package-lock.json
+/yarn.lock
+*-lock.json
+*-lock.yaml
+
 # testing
 /coverage
 
@@ -33,8 +37,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# Lockfiles
-yarn.lock
-*-lock.json
-*-lock.yaml
