@@ -7,23 +7,39 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "FileFlex",
-    description: `FileFlex – your go-to online tool for unlimited and free
+  title: "FileFlex",
+  description: `FileFlex – your go-to online tool for unlimited and free
     multimedia conversion`,
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-    return (
-        <html lang="en">
-            <body className={inter.className}>
-                <ThemeProvider attribute="class" defaultTheme="system" enableSystem themes={["light", "dark"]}>
-                    <Navbar />
-                    <Toaster />
-                    <div className="container max-w-4xl min-h-screen pt-32 lg:pt-36 2xl:pt-44 lg:max-w-6xl 2xl:max-w-7xl">
-                        {children}
-                    </div>
-                </ThemeProvider>
-            </body>
-        </html>
-    );
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <script
+          defer
+          src="https://umami.itstarik.me/script.js"
+          data-website-id="d0c2020c-e652-4198-80d7-7168687b9c70"
+        ></script>
+      </head>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          themes={["light", "dark"]}
+        >
+          <Navbar />
+          <Toaster />
+          <div className="container max-w-4xl min-h-screen pt-32 lg:pt-36 2xl:pt-44 lg:max-w-6xl 2xl:max-w-7xl">
+            {children}
+          </div>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
 }
