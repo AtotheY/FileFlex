@@ -278,7 +278,7 @@ export default function Dropzone() {
                     setSelected(value);
                     updateAction(action.file_name, value);
                   }}
-                  value={selcted}
+                  value={action.to ? action.to.toString() : ""}
                 >
                   <SelectTrigger className="w-32 font-medium text-center outline-none focus:outline-none focus:ring-0 text-muted-foreground bg-background text-md">
                     <SelectValue placeholder="..." />
