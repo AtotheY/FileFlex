@@ -164,7 +164,6 @@ export default function Dropzone() {
     setFiles(data);
     const tmp: Action[] = [];
     data.forEach((file: any) => {
-      const formData = new FormData();
       tmp.push({
         file_name: file.name,
         file_size: file.size,
