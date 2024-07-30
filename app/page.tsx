@@ -10,7 +10,7 @@ export default function Home() {
         <p className="text-center text-muted-foreground text-md md:text-lg md:px-24 xl:px-44 2xl:px-52">
           Introducing FileFlex – your go-to online tool for unlimited and free
           multimedia conversion, all processed{" "}
-          <span className="font-medium text-blue-500">
+          <span className="font-medium text-primary">
             locally on your device for enhanced privacy and security
           </span>
           . Easily convert images, audio, and videos without any restrictions.
