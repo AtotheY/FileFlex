@@ -5,7 +5,7 @@ export default function Home() {
     <div className="pb-8 space-y-16">
       <div className="space-y-6">
         <h1 className="text-3xl font-medium text-center md:text-5xl">
-          Free Unlimited File Converter with FileFlex
+          Free Unlimited File Converter
         </h1>
         <p className="text-center text-muted-foreground text-md md:text-lg md:px-24 xl:px-44 2xl:px-52">
           Introducing FileFlex – your go-to online tool for unlimited and free
