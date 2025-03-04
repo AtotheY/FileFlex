@@ -1,0 +1,6 @@
+services:
+  fileflex:
+    container_name: fileflex
+    build: .
+    ports:
+      - 3000:3000
